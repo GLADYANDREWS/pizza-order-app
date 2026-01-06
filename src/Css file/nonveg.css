@@ -30,3 +30,6 @@ li{
     margin-top: 1.5vh;
     color: white;
 }
+.nonveg-list>li:hover{
+    cursor: pointer;
+}

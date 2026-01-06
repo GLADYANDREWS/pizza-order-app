@@ -29,3 +29,6 @@
     color: white;
     margin-top: 2vh;
 }
+.veg-list-con>li:hover{
+    cursor: pointer;
+}
