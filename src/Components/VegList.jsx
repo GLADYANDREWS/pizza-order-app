@@ -11,7 +11,7 @@ const VegList = () => {
   const [selectedItems, setSelectedItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/pizzas")
+    fetch("https://pizza-order-app-backend-1.onrender.com/api/pizzas")
       .then(res => res.json())
       .then(data => setVegList(data));
   }, []);
@@ -29,7 +29,7 @@ const VegList = () => {
 
   const saveOrder = async () => {
     try {
-      await fetch("http://localhost:5000/api/orders/save-order", {
+      await fetch("https://pizza-order-app-backend-1.onrender.com/api/orders/save-order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ items: selectedItems })

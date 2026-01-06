@@ -9,14 +9,14 @@ const SelectedItems = () => {
 
   // Fetch all orders from backend
   useEffect(() => {
-    fetch("http://localhost:5000/api/orders")
+    fetch("https://pizza-order-app-backend-1.onrender.com/api/orders")
       .then(res => res.json())
       .then(data => setOrders(data));
   }, []);
 
   // Delete order
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:5000/api/orders/${id}`, {
+    await fetch(`https://pizza-order-app-backend-1.onrender.com/api/orders/${id}`, {
       method: "DELETE"
     });
 

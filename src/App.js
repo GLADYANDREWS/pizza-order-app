@@ -11,6 +11,7 @@ const App = () => {
     const location = useLocation();
   return (
     <div>
+      <title>Pizza-App</title>
       <div className='head'>
         <img data-v-e883b1bf="" srcSet="https://img.icons8.com/?size=48&amp;id=bcb11mkMayyc&amp;format=png 1x, https://img.icons8.com/?size=96&amp;id=bcb11mkMayyc&amp;format=png 2x" alt="French Fries" width="48" height="48"></img>
         <h1>Pizza</h1>

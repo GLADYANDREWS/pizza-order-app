@@ -9,7 +9,7 @@ const NonVegList = () => {
   const [nonVegLists,setNonVegLists]=useState([])
 
   useEffect(()=>{
-    fetch("http://localhost:5000/api/pizzas")
+    fetch("https://pizza-order-app-backend-1.onrender.com/api/pizzas")
     .then(res=>res.json())
     .then(json=>setNonVegLists(json) )
   },[])
@@ -34,7 +34,7 @@ const NonVegList = () => {
 
 const saveOrder = async () => {
   try {
-    const res = await fetch("http://localhost:5000/api/orders/save-order", {
+    const res = await fetch("https://pizza-order-app-backend-1.onrender.com/api/orders/save-order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ items: selectedItems })
