@@ -18,7 +18,14 @@ const App = () => {
       </div>
 
       <Routes >
-        <Route path="/" element={<h2 aria-label="Homepage"></h2>}/>
+        <Route path="/" element={<h1 className="App-title"
+        style={{fontFamily:"cursive",
+                display:"flex",
+                justifyContent:"center",
+                fontWeight:"lighter",
+                color:"white"
+        }}    
+        >Wlcome to Pizza Order App</h1>}/>
         <Route path="/menu" element={<Menu />} />
         <Route path="/nonveg" element={<NonVegList/>}/>
         <Route path="/veg" element={<VegList/>}/>
