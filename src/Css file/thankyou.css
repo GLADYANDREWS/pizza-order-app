@@ -1,0 +1,43 @@
+.thankyou-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+.thankyou-para{
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.thankyou-para>h1{
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+}
+.thankyou-relax>h1{
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+
+  background: linear-gradient(
+    270deg,
+    #ffffff,
+    #3cff00,
+    #000000
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 3s ease infinite;
+}
+
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.thankyou-button{
+    margin-top: 20vh;
+}
